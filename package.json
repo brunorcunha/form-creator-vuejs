@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "vanilla-masker": "^1.2.0",
     "vue": "^2.6.11",
+    "vue-color": "^2.7.1",
     "vue-router": "^3.2.0",
+    "vuedraggable": "^2.24.0",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {

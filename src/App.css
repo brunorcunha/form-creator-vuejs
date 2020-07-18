@@ -1,23 +1,66 @@
+.wrapper {
+  height: 100%;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
 .banner {
   background-image: url(./assets/banner.png);
   background-size: 100% auto;
+  background-position: center;
   width: 100%;
   height: 200px;
   border: 1px solid #dadce0;
   border-radius: 8px;
 }
-@media (min-width: 1904px) {
-  .container {
-    max-width: 900px;
-  }
+.header {
+  position: absolute;
+  height: 6px;
+  background: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
-@media (min-width: 1264px) {
-  .container {
-    max-width: 900px;
-  }
+.cursorMove {
+  text-align: center;
+  cursor: move;
+  background: #fefefe;
 }
-@media (min-width: 960px) {
-  .container {
-    max-width: 900px;
-  }
+.selectedQuestion {
+  position: absolute;
+  width: 6px;
+  background: transparent;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.main {
+  max-width: 900px;
+  margin: auto;
+}
+.colorPicker {
+  overflow: hidden;
+}
+.colorPicker > span {
+  line-height: 31px;
+}
+.colorPicker > div {
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  float:left;
+  margin-right: 10px;
+  border: 1px solid #eee;
+}
+.v-application .image .v-image {
+  border: 10px solid #fff !important;
+  margin: -10px;
+  cursor: pointer;
+}
+.v-application .image:hover .v-image {
+  border-color: transparent !important;
 }
