@@ -51,13 +51,15 @@
           Escolher Imagem
           <v-icon right dark>insert_photo</v-icon>
         </v-btn>
-        <v-tooltip bottom>
+        <v-tooltip
+          bottom
+          v-if="!!options.images.background"
+        >
           <template #activator="{ on, attrs }">
             <v-btn
               icon
               color="red"
               @click="options.images.background = null"
-              v-if="!!options.images.background"
               v-bind="attrs"
               v-on="on"
             >
@@ -84,13 +86,15 @@
           Escolher Imagem
           <v-icon right dark>insert_photo</v-icon>
         </v-btn>
-        <v-tooltip bottom>
+        <v-tooltip
+            bottom
+            v-if="!!options.images.banner"
+        >
           <template #activator="{ on, attrs }">
             <v-btn
                 icon
                 color="red"
                 @click="options.images.banner = null"
-                v-if="!!options.images.banner"
                 v-bind="attrs"
                 v-on="on"
             >
